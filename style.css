@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    color: #fff;
+}
+.container{
+    height: 650px;
+    width: 100%;
+    position: relative;
+    background: #000 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::before{
+content: '';
+position: absolute;
+height: 330px;
+width: 330px;
+border-radius: 50%;
+background: linear-gradient(#08ffe6,#fcd200);
+transform: translate(-490px,-150px);
+}
+.container::after{
+    content: '';
+position: absolute;
+height: 300px;
+width: 300px;
+border-radius: 50%;
+background: linear-gradient(#fcd200,#fc2007);
+transform: translate(490px,170px);
+}
+.container .ball-1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #04f504;
+    transform: translate(-260px,200px);
+    position: absolute
+}
+.container .ball-2{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: #08e2ff;
+    transform: translate(-10px,-220px);
+    position: absolute
+}
+.container .ball-3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #ffc404;
+    transform: translate(150px,250px);
+    position: absolute
+}
+.container .box{
+    height: 86%;
+    width: 75%;
+    padding: 0,20px;
+    background:  rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px); /*impoetant!*/
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+}
+.container .box nav{
+    height: 7%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+.container .box nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    margin-top: px;
+
+}
+.container .box nav ul li a{
+    font-size: 13px;
+    cursor: pointer;
+}
+.container .box nav ul li a:hover{
+    color: #ffc404;
+}
+ .container .box .logo{
+    font-size: 35px;
+    color: #0000;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.container .box .contains{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    position: relative;
+    margin-top: 8%;
+    padding-left: 80px;
+}
+.container .box .contains .section-1{
+    position: absolute;
+    margin-top: 70px;
+}
+.container .box .contains .section-1 h2{
+   font-size: 75px;
+}
+.container .box .contains .section-1 h3{
+    font-size: 36px;
+}
+.container .box .contains .section-1 p{
+    margin-top: 5px;
+}
+.container .box .contains .section-1 .button{
+margin-top: 50px;
+}
+.container .box .contains .section-1 .button  a{
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.container .box .contains .section-1 .button  a:hover{
+background-color: #fff;
+color: #000;
+}
+.container .box .contains .section-2 img{
+    width: 400px;
+    height: auto;
+    transform: translate(450px);
+    margin-top: 30px;
+}
+span{
+    color: #000;
+    margin-left: 20px;
+}
+
